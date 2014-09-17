@@ -21200,9 +21200,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <connect gate="U1" pin="VCCB" pad="16"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-12292" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

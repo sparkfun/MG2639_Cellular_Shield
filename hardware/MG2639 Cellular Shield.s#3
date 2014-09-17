@@ -830,9 +830,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VOUT" pad="4"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="VREG-08337" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -21200,9 +21198,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <connect gate="U1" pin="VCCB" pad="16"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-12292" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
