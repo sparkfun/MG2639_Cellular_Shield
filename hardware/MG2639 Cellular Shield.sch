@@ -20954,6 +20954,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.6" y="0.5"/>
 </polygon>
 </package>
+<package name="LUXEON-REBEL">
+<smd name="ANODE" x="-1.39" y="2.63" dx="1.91" dy="2.03" layer="1" roundness="50"/>
+<smd name="CATHODE" x="1.39" y="2.63" dx="1.91" dy="2.03" layer="1" roundness="50"/>
+<smd name="P$3" x="0" y="-1.42" dx="4.68" dy="3.03" layer="1" roundness="50"/>
+<text x="-2.54" y="3.175" size="0.508" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="0.508" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -20982,6 +20989,54 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="LED-BLUE" prefix="D" uservalue="yes">
+<description>&lt;H3&gt;Blue LEDs for production use&lt;/H3&gt;&lt;p&gt;
+Various blue LEDs stocked by SparkFun production&lt;br&gt;
+0603 - DIO-08575&lt;br&gt;
+Rebel - DIO-09553&lt;br&gt;
+1206 - DIO-09911</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="0603" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-08575"/>
+<attribute name="VALUE" value="BLUE"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09911"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="REBEL" package="LUXEON-REBEL">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09553"/>
+<attribute name="VALUE" value="BLUE"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LED-RED" prefix="D" uservalue="yes">
 <description>Assorted Red LEDs&lt;br&gt;
 LilyPad 1206- DIO-09912&lt;br&gt;
@@ -21287,13 +21342,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J1" library="SparkFun-Connectors" deviceset="SIMHOLDER" device="SIM" value="SIMHOLDER"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="100UF-10V-10%(TANT)" device="" value="100uF"/>
-<part name="U4" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device="NOLABELS" value="ARDUINO_R3_SHIELDNOLABELS"/>
+<part name="U4" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device="NOLABELS" value="ARDUINO_R3_SHIELD"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value=""/>
-<part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="12MM" value="20mm coincell"/>
+<part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="12MM" value="12mm coincell"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value=""/>
@@ -21301,7 +21356,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
-<part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="1206" value="RED"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
@@ -21372,6 +21427,11 @@ Experimental</text>
 <text x="391.16" y="17.78" size="1.778" layer="97">Holes in board are 
 for antenna U.FL
 wire relief</text>
+<text x="20.32" y="2.54" size="1.778" layer="97">N. Seidle</text>
+<text x="7.62" y="170.18" size="1.778" layer="97">Open SJ1 to disconnect GPS 
+power from board power.</text>
+<text x="88.9" y="149.86" size="1.778" layer="97">Open SJ2 to free up GPIO
+and power up via boot button.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21406,7 +21466,10 @@ wire relief</text>
 <attribute name="NAME" x="17.78" y="154.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="22.86" y="152.4" size="1.778" layer="96"/>
 </instance>
-<instance part="BAT1" gate="G$1" x="109.22" y="109.22" rot="R270"/>
+<instance part="BAT1" gate="G$1" x="109.22" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="116.332" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="103.632" y="100.076" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="GND15" gate="1" x="109.22" y="99.06" rot="MR0"/>
 <instance part="GND16" gate="1" x="30.48" y="38.1" rot="MR0"/>
 <instance part="SJ2" gate="G$1" x="114.3" y="142.24" smashed="yes">

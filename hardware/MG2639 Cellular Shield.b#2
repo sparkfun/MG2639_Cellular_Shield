@@ -23,13 +23,13 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -176,6 +176,9 @@ Cellular Shield</text>
 <text x="39.878" y="69.85" size="1.016" layer="21" font="vector" ratio="15">RTC
 Batt</text>
 <text x="48.641" y="28.194" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SJ6</text>
+<text x="48.387" y="10.795" size="1.778" layer="21" font="vector" ratio="15">+</text>
+<text x="48.387" y="12.827" size="1.778" layer="21" font="vector" ratio="15">-</text>
+<text x="46.99" y="16.002" size="1.27" layer="21" font="vector" ratio="15">BATT</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -3315,7 +3318,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" value="MMBT2222A" x="7.62" y="43.18" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="" x="24.13" y="45.085" rot="R90"/>
-<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM" value="20mm coincell" x="46.99" y="63.5" rot="R270">
+<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM" value="12mm coincell" x="46.99" y="63.5" rot="R270">
 <attribute name="PROD_ID" value="BATT-08044" x="46.99" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="" x="22.86" y="6.35"/>
@@ -3325,8 +3328,8 @@ design rules under a new name.</description>
 <element name="R8" library="SparkFun-Resistors" package="0603-RES" value="1K" x="17.78" y="45.72" rot="R90">
 <attribute name="PROD_ID" value="RES-07856" x="17.78" y="45.72" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="D2" library="SparkFun-LED" package="LED-1206" value="RED" x="2.54" y="6.35" rot="R270">
-<attribute name="PROD_ID" value="DIO-00809" x="2.54" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="D2" library="SparkFun-LED" package="LED-1206" value="BLUE" x="2.54" y="6.35" rot="R270">
+<attribute name="PROD_ID" value="DIO-09911" x="2.54" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 <element name="R9" library="SparkFun-Resistors" package="0603-RES" value="1K" x="5.08" y="10.16" rot="R270">
 <attribute name="PROD_ID" value="RES-07856" x="5.08" y="10.16" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
@@ -3403,8 +3406,8 @@ design rules under a new name.</description>
 <element name="U$2" library="SparkFun-RF" package="SMA_BULKHEAD" value="SMA_HOLE" x="40.767" y="53.975"/>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.2" value="SFE_LOGO_NAME_FLAME.2_INCH" x="38.481" y="33.528" rot="MR0"/>
 <element name="SJ6" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="" x="43.18" y="29.21" rot="R270"/>
-<element name="JP3" library="SparkFun-Connectors" package="JST-2-PTH" value="LiPo" x="46.99" y="12.7" rot="R270">
-<attribute name="SKU" value="PRT-09914" x="46.99" y="12.7" size="1.016" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="JP5" library="SparkFun-Connectors" package="JST-2-PTH" value="LiPo" x="46.99" y="12.7" rot="R270">
+<attribute name="SKU" value="PRT-09914" x="46.99" y="12.7" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3486,7 +3489,7 @@ design rules under a new name.</description>
 <via x="21.59" y="35.56" extent="1-16" drill="0.508"/>
 <via x="21.082" y="40.64" extent="1-16" drill="0.508"/>
 <via x="20.32" y="35.56" extent="1-16" drill="0.508"/>
-<contactref element="JP3" pad="2"/>
+<contactref element="JP5" pad="1"/>
 </signal>
 <signal name="SIM_CLK">
 <contactref element="U5" pad="12"/>
@@ -3678,7 +3681,6 @@ design rules under a new name.</description>
 <wire x1="38.1" y1="20.55" x2="38.1" y2="25.4" width="0.2032" layer="1"/>
 <wire x1="35.56" y1="25.4" x2="34.29" y2="26.67" width="0.4572" layer="1"/>
 <contactref element="SJ6" pad="2"/>
-<contactref element="JP3" pad="1"/>
 <wire x1="43.18" y1="28.702" x2="43.18" y2="28.067" width="0.4572" layer="1"/>
 <wire x1="43.18" y1="28.067" x2="42.545" y2="27.432" width="0.4572" layer="1"/>
 <wire x1="42.545" y1="27.432" x2="41.529" y2="27.432" width="0.4572" layer="1"/>
@@ -3687,8 +3689,11 @@ design rules under a new name.</description>
 <wire x1="41.49" y1="29.21" x2="41.49" y2="27.471" width="0.4572" layer="1"/>
 <wire x1="41.49" y1="27.471" x2="41.529" y2="27.432" width="0.4572" layer="1"/>
 <wire x1="42.85" y1="20.32" x2="42.85" y2="16.84" width="0.4572" layer="1"/>
-<wire x1="42.85" y1="16.84" x2="45.99" y2="13.7" width="0.4572" layer="1"/>
-<wire x1="46.99" y1="13.7" x2="45.99" y2="13.7" width="0.4572" layer="1"/>
+<contactref element="JP5" pad="2"/>
+<wire x1="42.85" y1="16.84" x2="44.45" y2="15.24" width="0.4572" layer="1"/>
+<wire x1="44.45" y1="15.24" x2="44.45" y2="12.7" width="0.4572" layer="1"/>
+<wire x1="46.99" y1="11.7" x2="45.45" y2="11.7" width="0.4572" layer="1"/>
+<wire x1="45.45" y1="11.7" x2="44.45" y2="12.7" width="0.4572" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="Q2" pad="1"/>

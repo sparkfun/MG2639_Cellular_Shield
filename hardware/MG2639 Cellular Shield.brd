@@ -46,8 +46,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -176,6 +176,10 @@ Cellular Shield</text>
 <text x="39.878" y="69.85" size="1.016" layer="21" font="vector" ratio="15">RTC
 Batt</text>
 <text x="48.641" y="28.194" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SJ6</text>
+<text x="48.387" y="10.795" size="1.778" layer="21" font="vector" ratio="15">+</text>
+<text x="48.387" y="12.827" size="1.778" layer="21" font="vector" ratio="15">-</text>
+<text x="46.99" y="16.002" size="1.27" layer="21" font="vector" ratio="15">BATT</text>
+<text x="52.07" y="-16.51" size="1.778" layer="27" font="vector" ratio="15">N. Seidle</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -3305,7 +3309,7 @@ design rules under a new name.</description>
 <element name="C4" library="SparkFun-Capacitors" package="EIA7343" value="100uF" x="43.18" y="25.4" rot="R180">
 <attribute name="PROD_ID" value="CAP-07890" x="43.18" y="25.4" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="U4" library="SparkFun-Boards" package="UNO_R3_SHIELD_NOLABELS" value="ARDUINO_R3_SHIELDNOLABELS" x="0" y="0"/>
+<element name="U4" library="SparkFun-Boards" package="UNO_R3_SHIELD_NOLABELS" value="ARDUINO_R3_SHIELD" x="0" y="0"/>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MMBT2222A" x="27.94" y="6.35" rot="R270">
 <attribute name="PROD_ID" value="TRANS-08049" x="27.94" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="MMBT2222A" x="27.94" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3315,7 +3319,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" value="MMBT2222A" x="7.62" y="43.18" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="" x="24.13" y="45.085" rot="R90"/>
-<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM" value="20mm coincell" x="46.99" y="63.5" rot="R270">
+<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM" value="12mm coincell" x="46.99" y="63.5" rot="R270">
 <attribute name="PROD_ID" value="BATT-08044" x="46.99" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="" x="22.86" y="6.35"/>
@@ -3325,8 +3329,8 @@ design rules under a new name.</description>
 <element name="R8" library="SparkFun-Resistors" package="0603-RES" value="1K" x="17.78" y="45.72" rot="R90">
 <attribute name="PROD_ID" value="RES-07856" x="17.78" y="45.72" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="D2" library="SparkFun-LED" package="LED-1206" value="RED" x="2.54" y="6.35" rot="R270">
-<attribute name="PROD_ID" value="DIO-00809" x="2.54" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="D2" library="SparkFun-LED" package="LED-1206" value="BLUE" x="2.54" y="6.35" rot="R270">
+<attribute name="PROD_ID" value="DIO-09911" x="2.54" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 <element name="R9" library="SparkFun-Resistors" package="0603-RES" value="1K" x="5.08" y="10.16" rot="R270">
 <attribute name="PROD_ID" value="RES-07856" x="5.08" y="10.16" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
@@ -4198,6 +4202,24 @@ design rules under a new name.</description>
 <approved hash="3,1,f7e5d6e3d6e8f7ee"/>
 <approved hash="3,1,f5d9d8d7d8dcf5d2"/>
 <approved hash="3,1,fbcddacbdac0fbc6"/>
+<approved hash="7,39,c21000e81f1fdde7"/>
+<approved hash="7,39,7fe4e963e7900938"/>
+<approved hash="7,39,603cf51dfbf6163c"/>
+<approved hash="7,39,a066cebfa698b06e"/>
+<approved hash="7,39,bf72d2c5ba32af6e"/>
+<approved hash="7,39,f1cc18341852f1aa"/>
+<approved hash="7,39,e4042ea697bf6065"/>
+<approved hash="7,39,f1f818001855f1ad"/>
+<approved hash="7,39,951bd45c502a2c15"/>
+<approved hash="7,39,831000e81f1f9ce7"/>
+<approved hash="7,39,4918f040e2364616"/>
+<approved hash="7,39,c007f2bafda3d266"/>
+<approved hash="7,39,643cf175459ea83c"/>
+<approved hash="7,39,2a1034e82b1035e8"/>
+<approved hash="7,39,7be4ed0b59f8b738"/>
+<approved hash="7,39,40662e9410b3066e"/>
+<approved hash="7,39,5f7232ee0c19196e"/>
+<approved hash="7,39,231004e81b1f3ce7"/>
 <approved hash="4,1,56639c2bf43a9e70"/>
 <approved hash="4,1,565cac2a9439ae4c"/>
 <approved hash="4,1,9665fc29943e5674"/>
@@ -4214,8 +4236,8 @@ design rules under a new name.</description>
 <approved hash="19,1,a7eae690702cf1ad"/>
 <approved hash="19,1,8d86e46d895b9a4c"/>
 <approved hash="5,1,fa7e9d257d555a0d"/>
-<approved hash="19,1,e29cd7460244ea61"/>
 <approved hash="19,1,67576fb061ceb4d6"/>
+<approved hash="19,1,e29cd7460244ea61"/>
 <approved hash="19,1,a423b7708c85ba2c"/>
 <approved hash="19,1,3de6108bd006d891"/>
 <approved hash="4,16,56639c2bf43a9e70"/>
