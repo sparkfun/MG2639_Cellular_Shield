@@ -44,6 +44,8 @@ byte gpsTX = 5; //Transmit to the GPS module inside the MG2639
 byte cellReset = 6;
 byte cellOnOff = 7;
 
+byte trigger = 12; //Used for triggering the logic analyzer
+
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 #include <SoftwareSerial.h>
@@ -64,16 +66,17 @@ void setup()
 
   //pinMode(cellRX, INPUT);
   //pinMode(cellTX, INPUT);
-
+  
   pinMode(cellReset, OUTPUT);
   digitalWrite(cellReset, LOW); //Don't reset
 
   pinMode(cellOnOff, OUTPUT);
   digitalWrite(cellOnOff, LOW); //Don't turn on at this time
+  
+  pinMode(trigger, OUTPUT);
+  digitalWrite(trigger, LOW);
 
   //delay(1000);
-
-  //setTo9600();
 
   if(!initMG2639()) //Set baud rates and bring module online
   {      
@@ -81,17 +84,144 @@ void setup()
     while(1);
   }
   Serial.println("Module online!");
-
   
-  int rssi = checkSignalStrength();
-  Serial.print("RSSI: ");
-  Serial.println(rssi, DEC);
+  //MG2639.print("AT+CREG=2\r");
+  //delay(100);
 
-  String response = checkIMEI();
-  Serial.print("Response: ");
-  Serial.println(response);
+  boolean textSent = false;
   
-  checkRegistration();
+  while(1)
+  {
+    int rssi = checkSignalStrength();
+    Serial.print("RSSI: ");
+    Serial.println(rssi, DEC);
+  
+    //String response = checkIMEI();
+    //Serial.print("IMEI: ");
+    //Serial.println(response);
+    
+    checkRegistration();
+    
+    delay(2000);
+    
+    if(rssi < 40 && textSent == false)
+    {
+      textSent = true;
+      //sendTextMessage("Hallo world", "3032466316");
+      
+      digitalWrite(trigger, HIGH);
+      
+      String response;
+
+      response = sendCommand("+ZPPPOPEN");
+      Serial.print("Open GRPS connection: ");
+      Serial.println(response);
+      
+      delay(2000); //ZIP open takes a while
+      
+      response = sendCommand("+ZIPSETUP=1,204.144.132.37,80");
+      Serial.print("Setup IP: ");
+      Serial.println(response);
+
+      delay(2000); //ZIP open takes a while
+
+      response = sendCommand("+ZIPSEND=1,18\n\r");
+      MG2639.print("GET / HTTP/1.0\n\r\n\r");
+      Serial.print("GPRS Status: ");
+      Serial.println(response);
+
+      
+      
+      while(1);
+
+
+
+
+
+      /*response = sendCommand("+ZPPPSTATUS");
+      Serial.print("GPRS Status: ");
+      Serial.println(response);*/
+
+      /*String response = sendCommand("+ZIPSETUP=1,data.sparkfun.com,8081");
+      Serial.print("Port open: ");
+      Serial.print(response);*/
+
+      response = sendCommand("+CGATT=1");
+      Serial.print("GPRS Attach: ");
+      Serial.println(response);
+
+//      response = sendCommand("+CGDCONT=1, \"IP\",\"CMNET\"");
+      response = sendCommand("+CGDCONT=1, \"IP\",\"internet.t-mobile\"");
+//      response = sendCommand("+CGDCONT=1, \"IP\",\"internet.t-mobile\"\r\r\nATD*99#"); //That connects?
+      Serial.print("GPRS Connect: ");
+      Serial.println(response);
+      
+      delay(1000);
+
+      response = sendCommand("+CGACT=1,1");
+      Serial.print("GPRS Activate: ");
+      Serial.println(response);
+      
+      delay(1000); //Can take as long as 700ms
+
+      /*response = sendCommand("+CGCLASS?");
+      Serial.print("GPRS Class: ");
+      Serial.println(response);*/
+
+//      response = sendCommand("+ZIPSETUP=1,195.34.89.241,21"); //Test Ublox FTP
+      response = sendCommand("+ZIPSETUP=1,54.86.132.254,80");
+      Serial.print("Setup IP: ");
+      Serial.println(response);
+
+      response = sendCommand("+ZPPPSTATUS");
+      Serial.print("GPRS Status: ");
+      Serial.println(response);
+
+
+      response = sendCommand("D*99#");      
+//      response = sendCommand("D*99***1#");      
+      Serial.print("GPRS Connect: ");
+      Serial.println(response);
+      
+      delay(1000);
+
+      MG2639.print("GET / HTTP/1.0\r\nHost: www.google.com User-Agent: Arduino\r\n\r\n");
+      
+      
+      while(1);
+
+      response = sendCommand("D*99#");      
+//      response = sendCommand("D*99***1#");      
+      Serial.print("GPRS Connect: ");
+      Serial.println(response);
+      
+      //delay(4500);
+
+      delay(100);
+      
+      MG2639.print("GET / HTTP/1.0\r\nHost: www.google.com User-Agent: Arduino\r\n\r\n");
+      
+      
+      while(1);
+      
+      
+      /*String strToSend = "https://data.sparkfun.com/input/QGoEWpOOw9snOKqbvxzA?private_key=JqnPm4MM5zujmlyM8p1J&test1=8";
+      String strLen = String(strToSend.length());
+      
+      byte ctrlZ = 26;
+
+      String strToSend2 = "AT+ZIPSEND=8081," + strLen + "\r" + strToSend + ctrlZ;
+      Serial.print("Test print: ");
+      Serial.println(strToSend2);
+            
+      delay(100);
+      //MG2639.print(strToSend2);
+
+      delay(100);*/
+      
+    }
+  }
+  
 
 }
 
@@ -99,6 +229,33 @@ void loop()
 {
 
 
+}
+
+//Sends a message to a phone number
+//Returns true if successful
+//Generally, text messages have a 160 character limit
+
+boolean sendTextMessage(String message, String phoneNumber)
+{
+  //Put us in text SMS mode
+  String response = sendCommand("+CMGF=1");
+  Serial.print("CMGF: ");
+  Serial.println(response);
+
+  if(response != "OK") return false; //Bail on error
+  
+  byte ctrlZ = 26;
+  
+  String toSend = "+CMGS=\"" + phoneNumber + "\"\r" + message + (char)ctrlZ;
+  
+  Serial.print("toSend: ");
+  Serial.println(toSend);
+
+  response = sendCommand(toSend);
+  Serial.print("message: ");
+  Serial.println(response);
+
+  
 }
 
 //Checks network registration
@@ -163,15 +320,8 @@ int checkSignalStrength()
   //Serial.print("ber: ");
   //Serial.println(ber);
 
-  if(ber == 99)
-  {
-    //Serial.println("Network unavailable - check SIM and antenna");
-    return(-1);
-  }
-  else
-  {
-    return(rssi);
-  }
+  //An RSSI of 99 means the network is unavailable
+  return(rssi);
 }
 
 //This sends a command and checks that the response is valid (not error)
@@ -206,8 +356,16 @@ String sendCommand(String command)
   Serial.print(F("Sending command: "));
   Serial.println(strToSend);
 
+  while(MG2639.available()) MG2639.read(); //Remove everything in the buffers
+  
   MG2639.print(strToSend); //Send this string to the module
 
+  for(byte x = 0 ; x < 100 ; x++)
+  {
+    if(MG2639.available()) break; //Wait until we have some characters
+    delay(1);
+  }
+    
   delay(55); //We need a few ms at 9600 to get. 15ms works well
 
   while(breakFlag == false)
@@ -236,8 +394,8 @@ String sendCommand(String command)
   //First test
   if(firstChunk != strToSend)
   {
-    //Serial.print("Chunk1: ");
-    //Serial.println(firstChunk);
+    Serial.print("Chunk1: ");
+    Serial.println(firstChunk);
     return(ERROR_COMMAND_STRING_MISMATCH);
   }
 
@@ -398,8 +556,4 @@ boolean initMG2639(void)
 
   return(false);
 }
-
-
-
-
 
