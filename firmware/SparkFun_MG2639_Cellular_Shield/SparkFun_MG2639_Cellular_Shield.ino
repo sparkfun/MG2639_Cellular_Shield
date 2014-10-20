@@ -1,29 +1,36 @@
 /*
- Library and example code for the bq76920, bq76930, and bq76940 battery management IC.
+ Library and example code for the SparkFun MG2639 Cellular shield.
  By: Nathan Seidle
  SparkFun Electronics
- Date: October 4th, 2014
+ Date: October 20th, 2014
  License: This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
  
- The bq769x0 series ICs manage large multi-cell battery packs for 12/18/24/36 and 48V systems. This code focuses on the 
- largest IC the bq76940 but most features should work on the smaller pack controllers.
- 
- The bq76940 measures individual cell voltages, coulomb counter, three thermistor temperature sensors, and a bunch of
- other nice features.
+The SparkFun MG2639 Cellular shield is an Arduino compatible shield that gives the user access to the MG2639_V3 GSM+GPS module.
  
  The shield is wired in the following way:
  
  Arduino pin RX -> MG2639 TX
  TX -> MG2639 RX
- D2 -> TX (enable with solder jumper)
- D3 -> RX (enable with solder jumper)
+ D2 -> TX (enable with solder jumper SJ3)
+ D3 -> RX (enable with solder jumper SJ4)
  D4 -> GPS RX
  D5 -> GPS TX
  D6 -> Cell Reset (pull down 500ms minimum to reset module)
  D7 -> On/Off (Provide 2-5s low pulse to turn on/off module)
  
+ NOTE: 
+ This shield draws more than most usb ports can provide. Apply external power to prevent erratic rebooting.
+ 
  TODO:
- Gett bullet proof boot up sequence with ATOK testing, baud rate setting, and AT&F if nescessary
+ Get bulletproof boot sequence with ATOK testing, baud rate setting, and AT&F if nescessary
+ 
+ Solder Jumpers
+ SJ1 -> Open to disconnect gps power from board power.
+ SJ2 -> Open to free up GPIO pin. If opened, you have to reboot via boot button.
+ SJ3 -> Select between hardware UART and software UART. Default = hardware
+ SJ4 -> Select between hardware UART and software UART. Default = hardware
+ SJ5 -> Select between 3.3v and 5v. Default = 3.3v
+ SJ6 -> Cut to power board exclusively from battery.
  
  */
 
