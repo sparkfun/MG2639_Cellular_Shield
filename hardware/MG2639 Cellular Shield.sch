@@ -32061,6 +32061,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="22OHM1/10W1%(0603)" device="" value="22"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="22OHM1/10W1%(0603)" device="" value="22"/>
+<part name="JP7" library="SparkFun-Connectors" deviceset="M01" device="PTH" value="M01PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -32164,8 +32165,8 @@ power from board power.</text>
 <instance part="U1" gate="U1" x="226.06" y="215.9"/>
 <instance part="JP4" gate="G$1" x="340.36" y="144.78" rot="MR180"/>
 <instance part="GND27" gate="1" x="350.52" y="137.16"/>
-<instance part="JP2" gate="G$1" x="259.08" y="55.88" rot="R180"/>
-<instance part="GND3" gate="1" x="251.46" y="40.64" rot="MR0"/>
+<instance part="JP2" gate="G$1" x="264.16" y="55.88" rot="R180"/>
+<instance part="GND3" gate="1" x="256.54" y="40.64" rot="MR0"/>
 <instance part="C10" gate="G$1" x="210.82" y="251.46"/>
 <instance part="C11" gate="G$1" x="223.52" y="251.46"/>
 <instance part="GND14" gate="1" x="223.52" y="243.84" rot="MR0"/>
@@ -32211,6 +32212,7 @@ power from board power.</text>
 <attribute name="NAME" x="358.902" y="113.7666" size="1.778" layer="95"/>
 <attribute name="VALUE" x="353.822" y="113.7666" size="1.778" layer="96"/>
 </instance>
+<instance part="JP7" gate="G$1" x="337.82" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -32371,8 +32373,8 @@ power from board power.</text>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="7"/>
-<wire x1="254" y1="45.72" x2="251.46" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="45.72" x2="251.46" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="45.72" x2="256.54" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="45.72" x2="256.54" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -32784,6 +32786,11 @@ power from board power.</text>
 <pinref part="C10" gate="G$1" pin="1"/>
 <label x="210.82" y="259.08" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<wire x1="345.44" y1="165.1" x2="347.98" y2="165.1" width="0.1524" layer="91"/>
+<label x="347.98" y="165.1" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="USB+" class="0">
 <segment>
@@ -33053,42 +33060,42 @@ power from board power.</text>
 <net name="MIC_P1" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="MIC_P1"/>
-<wire x1="241.3" y1="55.88" x2="254" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="55.88" x2="259.08" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="MIC_P0" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="MIC_P0"/>
-<wire x1="241.3" y1="58.42" x2="254" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="58.42" x2="259.08" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MIC_N0" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="MIC_N0"/>
-<wire x1="241.3" y1="60.96" x2="254" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="60.96" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RECN" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="RECN"/>
-<wire x1="241.3" y1="53.34" x2="254" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="53.34" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="RECP" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="RECP"/>
-<wire x1="241.3" y1="50.8" x2="254" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="50.8" x2="259.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="EAR_L" class="0">
 <segment>
 <pinref part="U5" gate="U1" pin="EAR_L"/>
-<wire x1="241.3" y1="48.26" x2="254" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="48.26" x2="259.08" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -33150,6 +33157,34 @@ power from board power.</text>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="353.06" y1="116.84" x2="347.98" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO0" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="GPIO0/PWM"/>
+<wire x1="241.3" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
+<label x="243.84" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO1" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="GPIO1/SCL"/>
+<wire x1="241.3" y1="104.14" x2="243.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="243.84" y="104.14" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="GPIO2/SDA"/>
+<wire x1="241.3" y1="101.6" x2="243.84" y2="101.6" width="0.1524" layer="91"/>
+<label x="243.84" y="101.6" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ADCIN" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="ADCIN"/>
+<wire x1="241.3" y1="43.18" x2="243.84" y2="43.18" width="0.1524" layer="91"/>
+<label x="243.84" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
