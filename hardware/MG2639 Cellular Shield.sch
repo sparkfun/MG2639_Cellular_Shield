@@ -354,7 +354,7 @@
 <wire x1="12.519" y1="-15" x2="12.011" y2="-15" width="0.2032" layer="21"/>
 <wire x1="-12.5" y1="-11.19" x2="-12.5" y2="-15" width="0.2032" layer="21"/>
 <wire x1="-12.5" y1="-15" x2="-12.246" y2="-15" width="0.2032" layer="21"/>
-<polygon width="0.2032" layer="21">
+<polygon width="0.2032" layer="49">
 <vertex x="-10.2" y="12.5"/>
 <vertex x="10.2" y="12.5"/>
 <vertex x="10.2" y="-12.5"/>
@@ -31322,6 +31322,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="0603">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 <package name="0603-RES">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -31383,7 +31398,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603-RES">
+<device name="" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -31391,7 +31406,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-07857" constant="no"/>
-<attribute name="VALUE" value="4.7K" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -31432,6 +31446,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="RES-08272"/>
 <attribute name="VALUE" value="2.2k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22OHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<description>RES-08698</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08698" constant="no"/>
+<attribute name="VALUE" value="22" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -32025,6 +32059,8 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="R7" library="SparkFun-Resistors" deviceset="22OHM1/10W1%(0603)" device="" value="22"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="22OHM1/10W1%(0603)" device="" value="22"/>
 </parts>
 <sheets>
 <sheet>
@@ -32167,6 +32203,14 @@ power from board power.</text>
 <instance part="SUPPLY3" gate="G$1" x="233.68" y="238.76"/>
 <instance part="SUPPLY4" gate="G$1" x="388.62" y="233.68"/>
 <instance part="SUPPLY5" gate="G$1" x="393.7" y="233.68"/>
+<instance part="R7" gate="G$1" x="358.14" y="119.38" smashed="yes">
+<attribute name="NAME" x="359.8164" y="120.5992" size="1.778" layer="95"/>
+<attribute name="VALUE" x="354.7364" y="120.5992" size="1.778" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="358.14" y="116.84" smashed="yes">
+<attribute name="NAME" x="358.902" y="113.7666" size="1.778" layer="95"/>
+<attribute name="VALUE" x="353.822" y="113.7666" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -32743,26 +32787,26 @@ power from board power.</text>
 </net>
 <net name="USB+" class="0">
 <segment>
-<label x="355.6" y="116.84" size="1.27" layer="95" xref="yes"/>
-<wire x1="347.98" y1="116.84" x2="355.6" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
-</segment>
-<segment>
 <pinref part="U5" gate="U1" pin="USB_DP"/>
 <wire x1="241.3" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
 <label x="243.84" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="116.84" x2="365.76" y2="116.84" width="0.1524" layer="91"/>
+<label x="365.76" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="USB-" class="0">
-<segment>
-<label x="355.6" y="119.38" size="1.27" layer="95" xref="yes"/>
-<wire x1="347.98" y1="119.38" x2="355.6" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="4"/>
-</segment>
 <segment>
 <pinref part="U5" gate="U1" pin="USB_DM"/>
 <wire x1="241.3" y1="66.04" x2="243.84" y2="66.04" width="0.1524" layer="91"/>
 <label x="243.84" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="119.38" x2="365.76" y2="119.38" width="0.1524" layer="91"/>
+<label x="365.76" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -33092,6 +33136,20 @@ power from board power.</text>
 <pinref part="SJ2" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="147.32" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
+<wire x1="353.06" y1="119.38" x2="347.98" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="353.06" y1="116.84" x2="347.98" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

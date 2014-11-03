@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -216,84 +216,78 @@
 <wire x1="12.519" y1="-15" x2="12.011" y2="-15" width="0.2032" layer="21"/>
 <wire x1="-12.5" y1="-11.19" x2="-12.5" y2="-15" width="0.2032" layer="21"/>
 <wire x1="-12.5" y1="-15" x2="-12.246" y2="-15" width="0.2032" layer="21"/>
-<polygon width="0.2032" layer="21">
-<vertex x="-10.2" y="12.5"/>
-<vertex x="10.2" y="12.5"/>
-<vertex x="10.2" y="-12.5"/>
-<vertex x="-10.2" y="-12.5"/>
-</polygon>
 <text x="-12.5" y="16" size="1.27" layer="25">&gt;Name</text>
 <text x="-12.5" y="-18" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
 <symbol name="MG2639">
-<wire x1="-33.02" y1="58.42" x2="27.94" y2="58.42" width="0.254" layer="94"/>
-<wire x1="27.94" y1="58.42" x2="27.94" y2="-63.5" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-63.5" x2="-33.02" y2="-63.5" width="0.254" layer="94"/>
-<wire x1="-33.02" y1="-63.5" x2="-33.02" y2="58.42" width="0.254" layer="94"/>
-<pin name="TXD1" x="30.48" y="53.34" length="short" direction="out" rot="R180"/>
-<pin name="RXD1" x="30.48" y="55.88" length="short" direction="in" rot="R180"/>
-<pin name="ADCIN" x="30.48" y="-48.26" length="short" direction="in" rot="R180"/>
-<pin name="GATDRV" x="30.48" y="-50.8" length="short" direction="out" rot="R180"/>
-<pin name="CHR_LDO" x="30.48" y="-53.34" length="short" direction="out" rot="R180"/>
-<pin name="VCHG" x="30.48" y="-55.88" length="short" direction="pwr" rot="R180"/>
-<pin name="ISENSE" x="30.48" y="-58.42" length="short" direction="in" rot="R180"/>
-<pin name="BATSNS" x="30.48" y="-60.96" length="short" direction="in" rot="R180"/>
-<pin name="GPS_FIXED_LED" x="30.48" y="20.32" length="short" direction="out" rot="R180"/>
-<pin name="VRTC" x="-35.56" y="50.8" length="short" direction="pwr"/>
-<pin name="GPS_TXD" x="30.48" y="22.86" length="short" direction="out" rot="R180"/>
-<pin name="GPS_RXD" x="30.48" y="25.4" length="short" direction="in" rot="R180"/>
-<pin name="V_GPS" x="-35.56" y="53.34" length="short" direction="pwr"/>
-<pin name="GND@17" x="-35.56" y="-58.42" length="short" direction="pwr"/>
-<pin name="GPS_ANT" x="-35.56" y="12.7" length="short" direction="in"/>
-<pin name="USB_DM" x="30.48" y="-25.4" length="short" rot="R180"/>
-<pin name="TXD2" x="30.48" y="30.48" length="short" direction="out" rot="R180"/>
-<pin name="RXD2" x="30.48" y="33.02" length="short" direction="in" rot="R180"/>
-<pin name="GND@42" x="-35.56" y="-60.96" length="short" direction="pwr"/>
-<pin name="VDDIO" x="-35.56" y="45.72" length="short" direction="out"/>
-<pin name="DSR1" x="30.48" y="40.64" length="short" direction="out" rot="R180"/>
-<pin name="DTR1" x="30.48" y="43.18" length="short" direction="in" rot="R180"/>
-<pin name="PWRKEY_N" x="-35.56" y="38.1" length="short" direction="in"/>
-<pin name="MIC_N0" x="30.48" y="-30.48" length="short" direction="in" rot="R180"/>
-<pin name="MIC_P0" x="30.48" y="-33.02" length="short" direction="in" rot="R180"/>
-<pin name="MIC_P1" x="30.48" y="-35.56" length="short" direction="in" rot="R180"/>
-<pin name="RECN" x="30.48" y="-38.1" length="short" direction="out" rot="R180"/>
-<pin name="RECP" x="30.48" y="-40.64" length="short" direction="out" rot="R180"/>
-<pin name="EAR_L" x="30.48" y="-43.18" length="short" direction="out" rot="R180"/>
-<pin name="!SYSRST" x="-35.56" y="40.64" length="short" direction="in"/>
-<pin name="GPIO53" x="30.48" y="-10.16" length="short" rot="R180"/>
-<pin name="GPIO55" x="30.48" y="-15.24" length="short" rot="R180"/>
-<pin name="GPIO50" x="30.48" y="-7.62" length="short" rot="R180"/>
-<pin name="GPIO54" x="30.48" y="-12.7" length="short" rot="R180"/>
-<pin name="GPIO56" x="30.48" y="-17.78" length="short" rot="R180"/>
-<pin name="GPIO0/PWM" x="30.48" y="15.24" length="short" rot="R180"/>
-<pin name="GPIO1/SCL" x="30.48" y="12.7" length="short" rot="R180"/>
-<pin name="GPIO2/SDA" x="30.48" y="10.16" length="short" rot="R180"/>
-<pin name="GPIO36" x="30.48" y="7.62" length="short" rot="R180"/>
-<pin name="GPIO39" x="30.48" y="0" length="short" rot="R180"/>
-<pin name="GPIO37" x="30.48" y="5.08" length="short" rot="R180"/>
-<pin name="GPIO46" x="30.48" y="-5.08" length="short" rot="R180"/>
-<pin name="GPIO40" x="30.48" y="-2.54" length="short" rot="R180"/>
-<pin name="GPIO38" x="30.48" y="2.54" length="short" rot="R180"/>
-<pin name="USB_DP" x="30.48" y="-22.86" length="short" rot="R180"/>
-<pin name="GND@15" x="-35.56" y="-55.88" length="short" direction="pwr"/>
-<pin name="VSIM" x="-35.56" y="-35.56" length="short" direction="out"/>
-<pin name="SIM_DATA" x="-35.56" y="-33.02" length="short"/>
-<pin name="SIM_CLK" x="-35.56" y="-30.48" length="short" direction="out"/>
-<pin name="SIM_RST" x="-35.56" y="-27.94" length="short" direction="out"/>
-<pin name="DCD1" x="30.48" y="45.72" length="short" direction="out" rot="R180"/>
-<pin name="CTS1" x="30.48" y="50.8" length="short" direction="in" rot="R180"/>
-<pin name="RTS1" x="30.48" y="48.26" length="short" direction="out" rot="R180"/>
-<pin name="RSSI_LED" x="-35.56" y="33.02" length="short" direction="out"/>
-<pin name="VBAT" x="-35.56" y="55.88" length="short" direction="pwr"/>
-<pin name="GND@5" x="-35.56" y="-53.34" length="short" direction="pwr"/>
-<pin name="RING" x="30.48" y="38.1" length="short" direction="out" rot="R180"/>
-<pin name="GND@3" x="-35.56" y="-50.8" length="short" direction="pwr"/>
-<pin name="RF_ANT" x="-35.56" y="15.24" length="short"/>
-<pin name="GND@1" x="-35.56" y="-48.26" length="short" direction="pwr"/>
-<text x="-33.02" y="59.182" size="1.778" layer="95">&gt;Name</text>
-<text x="17.78" y="-66.04" size="1.778" layer="96">&gt;Value</text>
+<wire x1="-17.78" y1="58.42" x2="17.78" y2="58.42" width="0.254" layer="94"/>
+<wire x1="17.78" y1="58.42" x2="17.78" y2="-63.5" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-63.5" x2="-17.78" y2="-63.5" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-63.5" x2="-17.78" y2="58.42" width="0.254" layer="94"/>
+<pin name="TXD1" x="20.32" y="53.34" length="short" direction="out" rot="R180"/>
+<pin name="RXD1" x="20.32" y="55.88" length="short" direction="in" rot="R180"/>
+<pin name="ADCIN" x="20.32" y="-48.26" length="short" direction="in" rot="R180"/>
+<pin name="GATDRV" x="20.32" y="-50.8" length="short" direction="out" rot="R180"/>
+<pin name="CHR_LDO" x="20.32" y="-53.34" length="short" direction="out" rot="R180"/>
+<pin name="VCHG" x="20.32" y="-55.88" length="short" direction="pwr" rot="R180"/>
+<pin name="ISENSE" x="20.32" y="-58.42" length="short" direction="in" rot="R180"/>
+<pin name="BATSNS" x="20.32" y="-60.96" length="short" direction="in" rot="R180"/>
+<pin name="GPS_FIXED_LED" x="20.32" y="20.32" length="short" direction="out" rot="R180"/>
+<pin name="VRTC" x="-20.32" y="50.8" length="short" direction="pwr"/>
+<pin name="GPS_TXD" x="20.32" y="22.86" length="short" direction="out" rot="R180"/>
+<pin name="GPS_RXD" x="20.32" y="25.4" length="short" direction="in" rot="R180"/>
+<pin name="V_GPS" x="-20.32" y="53.34" length="short" direction="pwr"/>
+<pin name="GND@17" x="-20.32" y="-58.42" length="short" direction="pwr"/>
+<pin name="GPS_ANT" x="-20.32" y="12.7" length="short" direction="in"/>
+<pin name="USB_DM" x="20.32" y="-25.4" length="short" rot="R180"/>
+<pin name="TXD2" x="20.32" y="30.48" length="short" direction="out" rot="R180"/>
+<pin name="RXD2" x="20.32" y="33.02" length="short" direction="in" rot="R180"/>
+<pin name="GND@42" x="-20.32" y="-60.96" length="short" direction="pwr"/>
+<pin name="VDDIO" x="-20.32" y="45.72" length="short" direction="out"/>
+<pin name="DSR1" x="20.32" y="40.64" length="short" direction="out" rot="R180"/>
+<pin name="DTR1" x="20.32" y="43.18" length="short" direction="in" rot="R180"/>
+<pin name="PWRKEY_N" x="-20.32" y="38.1" length="short" direction="in"/>
+<pin name="MIC_N0" x="20.32" y="-30.48" length="short" direction="in" rot="R180"/>
+<pin name="MIC_P0" x="20.32" y="-33.02" length="short" direction="in" rot="R180"/>
+<pin name="MIC_P1" x="20.32" y="-35.56" length="short" direction="in" rot="R180"/>
+<pin name="RECN" x="20.32" y="-38.1" length="short" direction="out" rot="R180"/>
+<pin name="RECP" x="20.32" y="-40.64" length="short" direction="out" rot="R180"/>
+<pin name="EAR_L" x="20.32" y="-43.18" length="short" direction="out" rot="R180"/>
+<pin name="!SYSRST" x="-20.32" y="40.64" length="short" direction="in"/>
+<pin name="GPIO53" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="GPIO55" x="20.32" y="-15.24" length="short" rot="R180"/>
+<pin name="GPIO50" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="GPIO54" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="GPIO56" x="20.32" y="-17.78" length="short" rot="R180"/>
+<pin name="GPIO0/PWM" x="20.32" y="15.24" length="short" rot="R180"/>
+<pin name="GPIO1/SCL" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="GPIO2/SDA" x="20.32" y="10.16" length="short" rot="R180"/>
+<pin name="GPIO36" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="GPIO39" x="20.32" y="0" length="short" rot="R180"/>
+<pin name="GPIO37" x="20.32" y="5.08" length="short" rot="R180"/>
+<pin name="GPIO46" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="GPIO40" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="GPIO38" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="USB_DP" x="20.32" y="-22.86" length="short" rot="R180"/>
+<pin name="GND@15" x="-20.32" y="-55.88" length="short" direction="pwr"/>
+<pin name="VSIM" x="-20.32" y="-35.56" length="short" direction="out"/>
+<pin name="SIM_DATA" x="-20.32" y="-33.02" length="short"/>
+<pin name="SIM_CLK" x="-20.32" y="-30.48" length="short" direction="out"/>
+<pin name="SIM_RST" x="-20.32" y="-27.94" length="short" direction="out"/>
+<pin name="DCD1" x="20.32" y="45.72" length="short" direction="out" rot="R180"/>
+<pin name="CTS1" x="20.32" y="50.8" length="short" direction="in" rot="R180"/>
+<pin name="RTS1" x="20.32" y="48.26" length="short" direction="out" rot="R180"/>
+<pin name="RSSI_LED" x="-20.32" y="33.02" length="short" direction="out"/>
+<pin name="VBAT" x="-20.32" y="55.88" length="short" direction="pwr"/>
+<pin name="GND@5" x="-20.32" y="-53.34" length="short" direction="pwr"/>
+<pin name="RING" x="20.32" y="38.1" length="short" direction="out" rot="R180"/>
+<pin name="GND@3" x="-20.32" y="-50.8" length="short" direction="pwr"/>
+<pin name="RF_ANT" x="-20.32" y="15.24" length="short"/>
+<pin name="GND@1" x="-20.32" y="-48.26" length="short" direction="pwr"/>
+<text x="-17.78" y="59.182" size="1.778" layer="95">&gt;Name</text>
+<text x="7.62" y="-66.04" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
