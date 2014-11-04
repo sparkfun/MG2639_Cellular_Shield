@@ -1,7 +1,7 @@
 SparkFun MG2639 Cellular Shield
 =========================
 
-[![SparkFun MG2639 Cellular Shield](https://github.com/sparkfun/SparkFun-MG2639-Cellular-Shield/blob/88eb285879021d54828d13c734865cc6500bc2bf/Board%20Layout.png)](https://raw.githubusercontent.com/sparkfun/SparkFun-MG2639-Cellular-Shield/88eb285879021d54828d13c734865cc6500bc2bf/Board%20Layout.png?token=117102__eyJzY29wZSI6IlJhd0Jsb2I6c3BhcmtmdW4vU3BhcmtGdW4tTUcyNjM5LUNlbGx1bGFyLVNoaWVsZC84OGViMjg1ODc5MDIxZDU0ODI4ZDEzYzczNDg2NWNjNjUwMGJjMmJmL0JvYXJkIExheW91dC5wbmciLCJleHBpcmVzIjoxNDEzMjA3ODExfQ%3D%3D--2cf12303dcbe55c20f8917d72f3ada013677ca8e)
+[![SparkFun MG2639 Cellular Shield](https://github.com/sparkfun/SparkFun-MG2639-Cellular-Shield/blob/master/Board%20Layout.png)](https://github.com/sparkfun/SparkFun-MG2639-Cellular-Shield/blob/master/Board%20Layout.png)
 
 The SparkFun MG2639 Cellular shield is an Arduino compatible shield that gives the user access to the MG2639_V3 GSM+GPS module. The module is capable of accquiring a GPS location as well as communication with GSM networks all over the world. Phonecalls can be made, texts sent, and data pushed to and read from web pages. All the supporting circuitry is provided including translation from 2.8V of the module to a user selectable 3.3V or 5V.
 
