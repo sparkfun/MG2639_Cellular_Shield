@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -31353,10 +31353,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="SparkFun1" deviceset="GND" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD" value="RESET"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="SIMHOLDER" device="SIM" value="SIMHOLDER"/>
+<part name="JP4" library="SparkFun-Connectors" deviceset="SIMHOLDER" device="SIM" value="SIMHOLDER"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="100UF-10V-10%(TANT)" device="" value="100uF"/>
-<part name="J2" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device="NOLABELS" value="ARDUINO_R3_SHIELD"/>
+<part name="JP3" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device="NOLABELS" value="ARDUINO_R3_SHIELD"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value=""/>
@@ -31382,7 +31382,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M07" device="" value="AUDIO"/>
+<part name="JP5" library="SparkFun-Connectors" deviceset="M07" device="" value="AUDIO"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
@@ -31399,13 +31399,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="VBAT1"/>
 <part name="GND17" library="SparkFun1" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2" value="LiPo"/>
-<part name="JP7" library="SparkFun-Connectors" deviceset="M05" device="PTH" value="USB"/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M05" device="PTH" value="USB"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value="BOOT"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SJ6" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value=""/>
 <part name="SJ7" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value=""/>
-<part name="JP4" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH"/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="FTDI_BASIC" device="PTH"/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
@@ -31418,7 +31418,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R10" library="SparkFun-Resistors" deviceset="22OHM1/10W1%(0603)" device="" value="22"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="22OHM1/10W1%(0603)" device="" value="22"/>
-<part name="U2" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="SOIC14"/>
+<part name="U2" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="SOIC14" value="TXB0104"/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5" value=""/>
@@ -31427,8 +31427,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
-<part name="JP6" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="UART2"/>
-<part name="JP5" library="SparkFun-Connectors" deviceset="M05" device="PTH" value="MISC"/>
+<part name="JP7" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="UART2"/>
+<part name="JP6" library="SparkFun-Connectors" deviceset="M05" device="PTH" value="MISC"/>
 <part name="SJ8" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="FTDI_VCCIO"/>
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="VBAT_EN"/>
 <part name="SJ9" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value=""/>
@@ -31440,7 +31440,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="46.99" y="247.142" size="1.778" layer="97">3.8V Output</text>
 <text x="235.458" y="255.778" size="1.778" layer="97">Select between
 3.3V and 5V
-Default = 3.3V</text>
+Default = 5V</text>
 <text x="289.56" y="251.46" size="1.778" layer="97">Select between hardware UART
 and software UART for both GPS
 and cellular UART's
@@ -31524,10 +31524,10 @@ on during power-up.</text>
 <instance part="GND1" gate="1" x="12.7" y="228.6"/>
 <instance part="LOGO3" gate="G$1" x="414.02" y="50.8"/>
 <instance part="S2" gate="G$1" x="424.18" y="223.52" rot="MR90"/>
-<instance part="J1" gate="J1" x="71.12" y="81.28"/>
+<instance part="JP4" gate="J1" x="71.12" y="81.28"/>
 <instance part="GND7" gate="1" x="83.82" y="73.66" rot="MR0"/>
 <instance part="C6" gate="G$1" x="91.44" y="238.76"/>
-<instance part="J2" gate="G$1" x="391.16" y="236.22" rot="MR0"/>
+<instance part="JP3" gate="G$1" x="391.16" y="236.22" rot="MR0"/>
 <instance part="Q1" gate="G$1" x="71.12" y="142.24"/>
 <instance part="GND6" gate="1" x="73.66" y="132.08" rot="MR0"/>
 <instance part="SJ4" gate="G$1" x="193.04" y="144.78" smashed="yes">
@@ -31559,7 +31559,7 @@ on during power-up.</text>
 <instance part="GND3" gate="1" x="58.42" y="63.5"/>
 <instance part="GND2" gate="1" x="48.26" y="63.5"/>
 <instance part="GND27" gate="1" x="398.78" y="91.44" rot="MR0"/>
-<instance part="JP3" gate="G$1" x="264.16" y="55.88" rot="R180"/>
+<instance part="JP5" gate="G$1" x="264.16" y="55.88" rot="R180"/>
 <instance part="GND24" gate="1" x="256.54" y="40.64" rot="MR0"/>
 <instance part="C10" gate="G$1" x="210.82" y="251.46"/>
 <instance part="C11" gate="G$1" x="223.52" y="251.46"/>
@@ -31579,15 +31579,15 @@ on during power-up.</text>
 </instance>
 <instance part="GND17" gate="1" x="154.94" y="215.9"/>
 <instance part="JP1" gate="G$1" x="167.64" y="241.3" rot="MR0"/>
-<instance part="JP7" gate="G$1" x="386.08" y="101.6"/>
+<instance part="JP9" gate="G$1" x="386.08" y="101.6"/>
 <instance part="SJ1" gate="G$1" x="48.26" y="142.24" rot="MR0"/>
 <instance part="R2" gate="G$1" x="48.26" y="154.94" rot="R90"/>
 <instance part="SUPPLY1" gate="G$1" x="48.26" y="162.56"/>
 <instance part="SJ6" gate="G$1" x="292.1" y="238.76"/>
 <instance part="SJ7" gate="G$1" x="292.1" y="218.44"/>
-<instance part="JP4" gate="G$1" x="342.9" y="101.6" rot="MR180"/>
+<instance part="JP8" gate="G$1" x="342.9" y="101.6" rot="MR180"/>
 <instance part="GND25" gate="1" x="350.52" y="88.9"/>
-<instance part="SJ5" gate="G$1" x="243.84" y="243.84" rot="MR90"/>
+<instance part="SJ5" gate="G$1" x="243.84" y="243.84" rot="R90"/>
 <instance part="LOGO1" gate="G$1" x="339.0392" y="41.0464"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="330.2" y="0"/>
@@ -31617,8 +31617,8 @@ on during power-up.</text>
 <instance part="STANDOFF3" gate="G$1" x="421.64" y="25.4"/>
 <instance part="STANDOFF2" gate="G$1" x="421.64" y="33.02"/>
 <instance part="STANDOFF1" gate="G$1" x="429.26" y="33.02"/>
-<instance part="JP6" gate="G$1" x="345.44" y="132.08"/>
-<instance part="JP5" gate="G$1" x="345.44" y="152.4" rot="MR180"/>
+<instance part="JP7" gate="G$1" x="345.44" y="132.08"/>
+<instance part="JP6" gate="G$1" x="345.44" y="152.4" rot="MR180"/>
 <instance part="SJ8" gate="G$1" x="363.22" y="99.06"/>
 <instance part="SJ3" gate="G$1" x="132.08" y="243.84"/>
 <instance part="SJ9" gate="G$1" x="327.66" y="218.44"/>
@@ -31662,13 +31662,13 @@ on during power-up.</text>
 <wire x1="403.86" y1="218.44" x2="406.4" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="218.44" x2="406.4" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-<pinref part="J2" gate="G$1" pin="GND@2"/>
-<pinref part="J2" gate="G$1" pin="GND@0"/>
+<pinref part="JP3" gate="G$1" pin="GND@2"/>
+<pinref part="JP3" gate="G$1" pin="GND@0"/>
 <wire x1="406.4" y1="215.9" x2="406.4" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="213.36" x2="406.4" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="213.36" x2="406.4" y2="213.36" width="0.1524" layer="91"/>
 <junction x="406.4" y="213.36"/>
-<pinref part="J2" gate="G$1" pin="GND@1"/>
+<pinref part="JP3" gate="G$1" pin="GND@1"/>
 <wire x1="403.86" y1="215.9" x2="406.4" y2="215.9" width="0.1524" layer="91"/>
 <junction x="406.4" y="215.9"/>
 </segment>
@@ -31683,7 +31683,7 @@ on during power-up.</text>
 <wire x1="12.7" y1="231.14" x2="12.7" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="GND"/>
+<pinref part="JP4" gate="J1" pin="GND"/>
 <wire x1="81.28" y1="83.82" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="83.82" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -31770,7 +31770,7 @@ on during power-up.</text>
 <wire x1="48.26" y1="66.04" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="7"/>
+<pinref part="JP5" gate="G$1" pin="7"/>
 <wire x1="259.08" y1="45.72" x2="256.54" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="45.72" x2="256.54" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
@@ -31798,11 +31798,11 @@ on during power-up.</text>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="398.78" y1="96.52" x2="398.78" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
 <wire x1="393.7" y1="96.52" x2="398.78" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="6"/>
+<pinref part="JP8" gate="G$1" pin="6"/>
 <wire x1="347.98" y1="93.98" x2="350.52" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="350.52" y1="93.98" x2="350.52" y2="91.44" width="0.1524" layer="91"/>
@@ -31813,7 +31813,7 @@ on during power-up.</text>
 <wire x1="218.44" y1="200.66" x2="218.44" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="4"/>
+<pinref part="JP6" gate="G$1" pin="4"/>
 <wire x1="353.06" y1="149.86" x2="355.6" y2="149.86" width="0.1524" layer="91"/>
 <label x="355.6" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -31825,7 +31825,7 @@ on during power-up.</text>
 <label x="198.12" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="CLK"/>
+<pinref part="JP4" gate="J1" pin="CLK"/>
 <wire x1="60.96" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
 <label x="43.18" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -31841,7 +31841,7 @@ on during power-up.</text>
 <label x="198.12" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="RST"/>
+<pinref part="JP4" gate="J1" pin="RST"/>
 <wire x1="60.96" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
 <label x="43.18" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -31886,7 +31886,7 @@ on during power-up.</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="VIN"/>
+<pinref part="JP3" gate="G$1" pin="VIN"/>
 <wire x1="403.86" y1="228.6" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
 <label x="414.02" y="228.6" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
@@ -31894,7 +31894,7 @@ on during power-up.</text>
 <net name="RESET" class="0">
 <segment>
 <wire x1="424.18" y1="231.14" x2="424.18" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="RES"/>
+<pinref part="JP3" gate="G$1" pin="RES"/>
 <wire x1="403.86" y1="231.14" x2="424.18" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="2"/>
 </segment>
@@ -31902,7 +31902,7 @@ on during power-up.</text>
 <net name="RXI" class="0">
 <segment>
 <wire x1="378.46" y1="254" x2="375.92" y2="254" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="RX"/>
+<pinref part="JP3" gate="G$1" pin="RX"/>
 <label x="375.92" y="254" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
@@ -31921,7 +31921,7 @@ on during power-up.</text>
 <net name="RX-SOFT" class="0">
 <segment>
 <wire x1="378.46" y1="243.84" x2="375.92" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="*D3"/>
+<pinref part="JP3" gate="G$1" pin="*D3"/>
 <label x="375.92" y="243.84" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
@@ -31934,35 +31934,35 @@ on during power-up.</text>
 <net name="A1" class="0">
 <segment>
 <wire x1="403.86" y1="251.46" x2="406.4" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="A1"/>
+<pinref part="JP3" gate="G$1" pin="A1"/>
 <label x="406.4" y="251.46" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
 <wire x1="403.86" y1="248.92" x2="406.4" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="A2"/>
+<pinref part="JP3" gate="G$1" pin="A2"/>
 <label x="406.4" y="248.92" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
 <wire x1="403.86" y1="246.38" x2="406.4" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="A3"/>
+<pinref part="JP3" gate="G$1" pin="A3"/>
 <label x="406.4" y="246.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
 <wire x1="403.86" y1="243.84" x2="406.4" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="A4"/>
+<pinref part="JP3" gate="G$1" pin="A4"/>
 <label x="406.4" y="243.84" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
 <wire x1="403.86" y1="241.3" x2="406.4" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="A5"/>
+<pinref part="JP3" gate="G$1" pin="A5"/>
 <label x="406.4" y="241.3" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
@@ -31980,7 +31980,7 @@ on during power-up.</text>
 <label x="198.12" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="I/O"/>
+<pinref part="JP4" gate="J1" pin="I/O"/>
 <wire x1="81.28" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <label x="119.38" y="78.74" size="1.27" layer="95" xref="yes"/>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -32000,9 +32000,9 @@ on during power-up.</text>
 <label x="198.12" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="VCC"/>
+<pinref part="JP4" gate="J1" pin="VCC"/>
 <wire x1="60.96" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="J1" gate="J1" pin="VPP"/>
+<pinref part="JP4" gate="J1" pin="VPP"/>
 <wire x1="81.28" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
@@ -32079,14 +32079,14 @@ on during power-up.</text>
 <label x="198.12" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="5"/>
+<pinref part="JP6" gate="G$1" pin="5"/>
 <wire x1="353.06" y1="147.32" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
 <label x="355.6" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CELL_RESET" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="*D6"/>
+<pinref part="JP3" gate="G$1" pin="*D6"/>
 <wire x1="378.46" y1="236.22" x2="375.92" y2="236.22" width="0.1524" layer="91"/>
 <label x="375.92" y="236.22" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
@@ -32099,7 +32099,7 @@ on during power-up.</text>
 <wire x1="48.26" y1="134.62" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="D7"/>
+<pinref part="JP3" gate="G$1" pin="D7"/>
 <wire x1="378.46" y1="233.68" x2="375.92" y2="233.68" width="0.1524" layer="91"/>
 <label x="375.92" y="233.68" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
@@ -32214,7 +32214,7 @@ on during power-up.</text>
 <junction x="200.66" y="236.22"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="3"/>
+<pinref part="JP6" gate="G$1" pin="3"/>
 <wire x1="353.06" y1="152.4" x2="355.6" y2="152.4" width="0.1524" layer="91"/>
 <label x="355.6" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -32252,7 +32252,7 @@ on during power-up.</text>
 </segment>
 <segment>
 <wire x1="378.46" y1="251.46" x2="375.92" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="TX"/>
+<pinref part="JP3" gate="G$1" pin="TX"/>
 <label x="375.92" y="251.46" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
@@ -32318,7 +32318,7 @@ on during power-up.</text>
 <label x="243.84" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
 <wire x1="353.06" y1="132.08" x2="355.6" y2="132.08" width="0.1524" layer="91"/>
 <label x="355.6" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -32330,7 +32330,7 @@ on during power-up.</text>
 <label x="243.84" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="2"/>
+<pinref part="JP7" gate="G$1" pin="2"/>
 <wire x1="353.06" y1="134.62" x2="355.6" y2="134.62" width="0.1524" layer="91"/>
 <label x="355.6" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -32367,7 +32367,7 @@ on during power-up.</text>
 </segment>
 <segment>
 <wire x1="403.86" y1="254" x2="406.4" y2="254" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="A0"/>
+<pinref part="JP3" gate="G$1" pin="A0"/>
 <label x="406.4" y="254" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
@@ -32383,7 +32383,7 @@ on during power-up.</text>
 <label x="236.22" y="213.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="3"/>
+<pinref part="JP8" gate="G$1" pin="3"/>
 <wire x1="347.98" y1="101.6" x2="350.52" y2="101.6" width="0.1524" layer="91"/>
 <label x="350.52" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -32400,7 +32400,7 @@ on during power-up.</text>
 <label x="236.22" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="JP8" gate="G$1" pin="2"/>
 <wire x1="347.98" y1="104.14" x2="350.52" y2="104.14" width="0.1524" layer="91"/>
 <label x="350.52" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -32431,13 +32431,13 @@ on during power-up.</text>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<wire x1="238.76" y1="243.84" x2="236.22" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="243.84" x2="236.22" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="SJ5" gate="G$1" pin="3"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+<pinref part="SJ5" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="243.84" x2="236.22" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="3.3V"/>
+<pinref part="JP3" gate="G$1" pin="3.3V"/>
 <wire x1="403.86" y1="223.52" x2="411.48" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <wire x1="411.48" y1="223.52" x2="411.48" y2="233.68" width="0.1524" layer="91"/>
@@ -32445,13 +32445,13 @@ on during power-up.</text>
 </net>
 <net name="5V" class="0">
 <segment>
-<wire x1="248.92" y1="243.84" x2="251.46" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="243.84" x2="251.46" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="SJ5" gate="G$1" pin="1"/>
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
+<pinref part="SJ5" gate="G$1" pin="3"/>
+<wire x1="248.92" y1="243.84" x2="251.46" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="5V"/>
+<pinref part="JP3" gate="G$1" pin="5V"/>
 <wire x1="403.86" y1="226.06" x2="406.4" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="5V"/>
 <wire x1="406.4" y1="226.06" x2="406.4" y2="233.68" width="0.1524" layer="91"/>
@@ -32465,7 +32465,7 @@ on during power-up.</text>
 <net name="TX-SOFT" class="0">
 <segment>
 <wire x1="378.46" y1="246.38" x2="375.92" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="D2"/>
+<pinref part="JP3" gate="G$1" pin="D2"/>
 <label x="375.92" y="246.38" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
@@ -32479,42 +32479,42 @@ on during power-up.</text>
 <segment>
 <pinref part="U3" gate="U1" pin="MIC_P1"/>
 <wire x1="241.3" y1="55.88" x2="259.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="3"/>
+<pinref part="JP5" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="MIC_P0" class="0">
 <segment>
 <pinref part="U3" gate="U1" pin="MIC_P0"/>
 <wire x1="241.3" y1="58.42" x2="259.08" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MIC_N0" class="0">
 <segment>
 <pinref part="U3" gate="U1" pin="MIC_N0"/>
 <wire x1="241.3" y1="60.96" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RECN" class="0">
 <segment>
 <pinref part="U3" gate="U1" pin="RECN"/>
 <wire x1="241.3" y1="53.34" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="4"/>
+<pinref part="JP5" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="RECP" class="0">
 <segment>
 <pinref part="U3" gate="U1" pin="RECP"/>
 <wire x1="241.3" y1="50.8" x2="259.08" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="5"/>
+<pinref part="JP5" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="EAR_L" class="0">
 <segment>
 <pinref part="U3" gate="U1" pin="EAR_L"/>
 <wire x1="241.3" y1="48.26" x2="259.08" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="6"/>
+<pinref part="JP5" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -32538,14 +32538,14 @@ on during power-up.</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="JP7" gate="G$1" pin="4"/>
+<pinref part="JP9" gate="G$1" pin="4"/>
 <wire x1="398.78" y1="104.14" x2="393.7" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="JP7" gate="G$1" pin="3"/>
+<pinref part="JP9" gate="G$1" pin="3"/>
 <wire x1="398.78" y1="101.6" x2="393.7" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -32556,7 +32556,7 @@ on during power-up.</text>
 <label x="243.84" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
 <wire x1="353.06" y1="157.48" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
 <label x="355.6" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -32574,14 +32574,14 @@ on during power-up.</text>
 <label x="243.84" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
 <wire x1="353.06" y1="154.94" x2="355.6" y2="154.94" width="0.1524" layer="91"/>
 <label x="355.6" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="JP4" gate="G$1" pin="4"/>
+<pinref part="JP8" gate="G$1" pin="4"/>
 <wire x1="347.98" y1="99.06" x2="358.14" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="SJ8" gate="G$1" pin="1"/>
 </segment>
@@ -32605,11 +32605,6 @@ on during power-up.</text>
 <wire x1="327.66" y1="210.82" x2="330.2" y2="210.82" width="0.1524" layer="91"/>
 <label x="330.2" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="D8"/>
-<wire x1="378.46" y1="231.14" x2="375.92" y2="231.14" width="0.1524" layer="91"/>
-<label x="375.92" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="GRX-SOFT" class="0">
 <segment>
@@ -32619,9 +32614,16 @@ on during power-up.</text>
 <label x="330.2" y="231.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="*D9"/>
+<pinref part="JP3" gate="G$1" pin="*D9"/>
 <wire x1="378.46" y1="228.6" x2="375.92" y2="228.6" width="0.1524" layer="91"/>
 <label x="375.92" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="JP9" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="D8"/>
+<wire x1="378.46" y1="231.14" x2="375.92" y2="231.14" width="0.1524" layer="91"/>
+<label x="375.92" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
