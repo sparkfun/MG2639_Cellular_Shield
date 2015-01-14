@@ -505,7 +505,9 @@
 <connect gate="U1" pin="V_GPS" pad="18"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="GPS-12331" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
