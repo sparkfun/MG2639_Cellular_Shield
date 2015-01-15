@@ -31935,41 +31935,6 @@ on during power-up.</text>
 <wire x1="292.1" y1="231.14" x2="292.1" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A1" class="0">
-<segment>
-<wire x1="403.86" y1="251.46" x2="406.4" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="A1"/>
-<label x="406.4" y="251.46" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-</net>
-<net name="A2" class="0">
-<segment>
-<wire x1="403.86" y1="248.92" x2="406.4" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="A2"/>
-<label x="406.4" y="248.92" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-</net>
-<net name="A3" class="0">
-<segment>
-<wire x1="403.86" y1="246.38" x2="406.4" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="A3"/>
-<label x="406.4" y="246.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-</net>
-<net name="A4" class="0">
-<segment>
-<wire x1="403.86" y1="243.84" x2="406.4" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="A4"/>
-<label x="406.4" y="243.84" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-</net>
-<net name="A5" class="0">
-<segment>
-<wire x1="403.86" y1="241.3" x2="406.4" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="A5"/>
-<label x="406.4" y="241.3" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ENABLE"/>
