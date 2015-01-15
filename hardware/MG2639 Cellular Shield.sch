@@ -31435,6 +31435,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="VBAT_EN"/>
 <part name="SJ9" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value=""/>
 <part name="SJ10" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value=""/>
+<part name="TP3" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -31625,6 +31626,7 @@ on during power-up.</text>
 <instance part="SJ3" gate="G$1" x="132.08" y="243.84"/>
 <instance part="SJ9" gate="G$1" x="327.66" y="218.44"/>
 <instance part="SJ10" gate="G$1" x="327.66" y="238.76"/>
+<instance part="TP3" gate="G$1" x="109.22" y="205.74" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -32065,6 +32067,11 @@ on during power-up.</text>
 <pinref part="SJ3" gate="G$1" pin="1"/>
 <wire x1="127" y1="243.84" x2="124.46" y2="243.84" width="0.1524" layer="91"/>
 <junction x="124.46" y="243.84"/>
+</segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="205.74" x2="111.76" y2="205.74" width="0.1524" layer="91"/>
+<label x="111.76" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
