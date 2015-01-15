@@ -3929,9 +3929,6 @@ design rules under a new name.</description>
 <wire x1="24.13" y1="46.57" x2="23.28" y2="46.57" width="0.2032" layer="1"/>
 <wire x1="23.28" y1="46.57" x2="22.63" y2="47.22" width="0.2032" layer="1"/>
 </signal>
-<signal name="CELL_RESET">
-<contactref element="JP3" pad="D6"/>
-</signal>
 <signal name="GPS_FIX">
 <contactref element="U3" pad="22"/>
 <contactref element="D2" pad="A"/>
@@ -4389,15 +4386,14 @@ design rules under a new name.</description>
 <signal name="GTX-SOFT">
 <contactref element="SJ9" pad="3"/>
 <wire x1="6.35" y1="34.7472" x2="4.2672" y2="34.7472" width="0.2032" layer="16"/>
+<contactref element="JP3" pad="D8"/>
+<wire x1="4.2672" y1="34.7472" x2="2.54" y2="33.02" width="0.2032" layer="16"/>
 </signal>
 <signal name="GRX-SOFT">
 <contactref element="SJ10" pad="3"/>
 <contactref element="JP3" pad="D9"/>
 <wire x1="6.35" y1="28.3972" x2="4.6228" y2="28.3972" width="0.2032" layer="16"/>
 <wire x1="4.6228" y1="28.3972" x2="2.54" y2="30.48" width="0.2032" layer="16"/>
-</signal>
-<signal name="JP9">
-<contactref element="JP3" pad="D8"/>
 </signal>
 </signals>
 <errors>

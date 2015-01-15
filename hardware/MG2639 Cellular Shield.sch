@@ -32093,13 +32093,6 @@ on during power-up.</text>
 <label x="355.6" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CELL_RESET" class="0">
-<segment>
-<pinref part="JP3" gate="G$1" pin="*D6"/>
-<wire x1="378.46" y1="236.22" x2="375.92" y2="236.22" width="0.1524" layer="91"/>
-<label x="375.92" y="236.22" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
 <net name="ON/OFF" class="0">
 <segment>
 <label x="45.72" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -32614,6 +32607,11 @@ on during power-up.</text>
 <wire x1="327.66" y1="210.82" x2="330.2" y2="210.82" width="0.1524" layer="91"/>
 <label x="330.2" y="210.82" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="D8"/>
+<wire x1="378.46" y1="231.14" x2="375.92" y2="231.14" width="0.1524" layer="91"/>
+<label x="375.92" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GRX-SOFT" class="0">
 <segment>
@@ -32626,13 +32624,6 @@ on during power-up.</text>
 <pinref part="JP3" gate="G$1" pin="*D9"/>
 <wire x1="378.46" y1="228.6" x2="375.92" y2="228.6" width="0.1524" layer="91"/>
 <label x="375.92" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="JP9" class="0">
-<segment>
-<pinref part="JP3" gate="G$1" pin="D8"/>
-<wire x1="378.46" y1="231.14" x2="375.92" y2="231.14" width="0.1524" layer="91"/>
-<label x="375.92" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
