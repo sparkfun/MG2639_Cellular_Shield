@@ -3430,9 +3430,6 @@ design rules under a new name.</description>
 <element name="R9" library="SparkFun-Resistors" package="0603-RES" value="1K" x="24.13" y="45.72" rot="R90">
 <attribute name="PROD_ID" value="RES-07856" x="24.13" y="45.72" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="D2" library="SparkFun-LED" package="LED-1206" value="BLUE" x="26.67" y="45.72" rot="R90">
-<attribute name="PROD_ID" value="DIO-09911" x="26.67" y="45.72" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-</element>
 <element name="R8" library="SparkFun-Resistors" package="0603-RES" value="1K" x="29.21" y="45.72" rot="R90">
 <attribute name="PROD_ID" value="RES-07856" x="29.21" y="45.72" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
@@ -3526,6 +3523,9 @@ design rules under a new name.</description>
 <element name="SJ9" library="SparkFun-Passives" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX" value="" x="6.35" y="35.56" rot="MR270"/>
 <element name="SJ10" library="SparkFun-Passives" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX" value="" x="6.35" y="29.21" rot="MR270"/>
 <element name="TP3" library="SparkFun-Passives" package="PAD.03X.05" value="" x="39.37" y="30.48" rot="MR0"/>
+<element name="D2" library="SparkFun-LED" package="LED-1206" value="YELLOW" x="26.67" y="45.72" rot="R90">
+<attribute name="PROD_ID" value="DIO-00820" x="26.67" y="45.72" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3916,7 +3916,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPS_FIX">
 <contactref element="U3" pad="22"/>
-<contactref element="D2" pad="A"/>
 <via x="28.2956" y="43.4848" extent="1-16" drill="0.508"/>
 <wire x1="22.479" y1="27.94" x2="15.24" y2="27.94" width="0.2032" layer="16"/>
 <wire x1="8.22" y1="23.13" x2="10.43" y2="23.13" width="0.2032" layer="1"/>
@@ -3929,13 +3928,14 @@ design rules under a new name.</description>
 <wire x1="24.638" y1="30.099" x2="24.638" y2="42.418" width="0.2032" layer="16"/>
 <wire x1="24.638" y1="42.418" x2="25.7048" y2="43.4848" width="0.2032" layer="16"/>
 <wire x1="28.2956" y1="43.4848" x2="25.7048" y2="43.4848" width="0.2032" layer="16"/>
+<contactref element="D2" pad="A"/>
 </signal>
 <signal name="N$9">
 <contactref element="R8" pad="2"/>
-<contactref element="D2" pad="C"/>
 <wire x1="26.67" y1="47.22" x2="27.71" y2="47.22" width="0.2032" layer="1"/>
 <wire x1="29.21" y1="46.57" x2="28.36" y2="46.57" width="0.2032" layer="1"/>
 <wire x1="28.36" y1="46.57" x2="27.71" y2="47.22" width="0.2032" layer="1"/>
+<contactref element="D2" pad="C"/>
 </signal>
 <signal name="VDDIO">
 <contactref element="U3" pad="41"/>
@@ -4550,10 +4550,10 @@ design rules under a new name.</description>
 <approved hash="19,16,0ff8785488fcd7f5"/>
 <approved hash="19,16,acebfa5d88f9f6fc"/>
 <approved hash="19,16,a6f77b0a88977d4d"/>
-<approved hash="19,16,091151bc278d97dd"/>
-<approved hash="19,16,091476bb828e15dc"/>
 <approved hash="19,16,085fde2129c11742"/>
 <approved hash="19,16,0954001ff06211d4"/>
+<approved hash="19,16,091476bb828e15dc"/>
+<approved hash="19,16,091151bc278d97dd"/>
 <approved hash="19,16,6ef1296e3b1ca01d"/>
 <approved hash="19,16,f0fd5cd37db3fc61"/>
 <approved hash="19,16,6084acb725ad4fdd"/>
