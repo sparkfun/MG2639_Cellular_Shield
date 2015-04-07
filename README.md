@@ -3,6 +3,8 @@ SparkFun MG2639 Cellular Shield
 
 [![SparkFun MG2639 Cellular Shield](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/5/7/speaker-hookup.jpg)](https://www.sparkfun.com/products/13120)
 
+[*SparkFun MG2639 Cellular Shield (CEL-13120)*](https://www.sparkfun.com/products/13120)
+
 The SparkFun MG2639 Cellular shield is an Arduino compatible shield that gives the user access to the MG2639_V3 GSM+GPS module. The module is capable of accquiring a GPS location as well as communication with GSM networks all over the world. Phonecalls can be made, texts sent, and data pushed to and read from web pages. All the supporting circuitry is provided including translation from 2.8V of the module to a user selectable 3.3V or 5V.
 
 The main interface is two software serial ports.
