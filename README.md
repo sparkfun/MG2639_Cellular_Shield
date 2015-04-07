@@ -1,7 +1,7 @@
 SparkFun MG2639 Cellular Shield
 =========================
 
-[![SparkFun MG2639 Cellular Shield](https://github.com/sparkfun/SparkFun-MG2639-Cellular-Shield/blob/master/Board%20Layout.png)](https://github.com/sparkfun/SparkFun-MG2639-Cellular-Shield/blob/master/Board%20Layout.png)
+[![SparkFun MG2639 Cellular Shield](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/5/7/speaker-hookup.jpg)](https://www.sparkfun.com/products/13120)
 
 The SparkFun MG2639 Cellular shield is an Arduino compatible shield that gives the user access to the MG2639_V3 GSM+GPS module. The module is capable of accquiring a GPS location as well as communication with GSM networks all over the world. Phonecalls can be made, texts sent, and data pushed to and read from web pages. All the supporting circuitry is provided including translation from 2.8V of the module to a user selectable 3.3V or 5V.
 
@@ -12,10 +12,12 @@ Power can be provided either from the Arduino board's VIN or from an external ba
 Repository Contents
 -------------------
 
-* **firmware** - Contains the various example sketches to check network registration, send text messages, and post to the [SparkFun data channel](http://data.sparkfun.com).
-* **hardware** - Schematic and PCB layout for the shield.
-* **datasheets** - The AT command set, hardware guide, and various other datasheets.
-* **library** - An eagle library containing the various custom footprints for this shield. Specifically the MG2639 footprint.
+* **/Firmware** - Example sketches that work without the Arduino library.
+* **/Hardware** - Schematic and PCB layout for the shield. Also includes an eagle library containing the various custom footprints for this shield. Specifically the MG2639 footprint.
+* **/Documentation** - The AT command set, hardware guide, and various other datasheets.
+* **/Libraries** - The SparkFun MG2639 Cellular Shield library.
+* **/Production** - Production panel files.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/mg2639-cellular-shield-hookup-guide)** - To get started using the MG2639 Cellular Shield, check out our tutorial!
 
 License Information
 -------------------
