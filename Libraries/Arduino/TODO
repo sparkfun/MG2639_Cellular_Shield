@@ -1,0 +1,47 @@
+TO DO:
+- Comment everything
+- Phone library
+	- uint8_t enableCallerID(bool enable); // AT+CLIP=<enable> 
+	- uint8_t setCallForwarding(uint8_t reason, uint8_t mode); // AT+CCFC
+	- uint8_t setCallWaiting(bool enable, uint8_t mode, uint8_t clas); // AT+CCWA
+	- uint8_t sendDTMF(const char * string); // AT+VTS=<string>
+	- int8_t hold(uint8_t n); // AT+CHLD=n
+	
+	// Audio Control
+	- uint8_t setVolume(uint8_t level); // AT+CLVL=level
+	- uint8_t setMute(bool on); // AT+ZSETMUTE=<on>
+	- uint8_t setPickUpTone(uint8_t tone); // AT+ZCALLTONE=0-3
+	- uint8_t selectSpeaker(uint8_t mic_headset); // AT+SPEAKER=<0,1>
+	- uint8_t setMicGain(uint8_t gain); // AT+ZMICGB=<gain>
+	- uint8_t sendTTS(char * text, uint8_t mode); // AT+ZTTS=<mode>,<text>
+	- uint8_t setupTTS(uint8_t volume, uint8_t gender, uint8_t speed); // AT+ZTTSP=<volume>,<gender>,<speed>
+	- uint8_t startRecording(char * fileName); // AT+AUDREC=1,"<filename>"
+	- uint8_t stopRecording(); // AT+AUDREC=0
+	- uint8_t playRecording(char * fileName); // ZT+AUDREC=2,"<filename>"
+	- uint8_t deleteRecording(char * fileName); // ZT+AUDREC=4,"<filename>"
+	
+- CellShield Functions:
+	- uint8_t reset(); // ATZ0
+	- uint8_t getStatus(); // AT+CPAS
+	- uint8_t setFunction(); // AT+CFUN (Enable/disable RF RX/TX)
+	- uint8_t powerOff(); // AT+ZPWROFF
+	- uint8_t getHardwareVersion(char * hVerRet); // AT+CGMR
+	- uint8_t getSoftwareVersion(char * sVerRet); // AT+ZVERS
+	- uint8_t getManufacturer(char * manRet); // AT+CGMI
+	- int8_t getRSSI(); // AT+CSQ
+	- uint8_t getClock(char * clockRet); // AT+CCLK?
+	- uint8_t setClock(uint8_t month, uint8_t day, uint8_t year, 
+	                 uint8_t h, uint8_t m, uint8_t s);
+
+- GPRS Functions
+
+	// UDP
+	
+	// Server Commands
+	- uint8_t monitorPort(unsigned int port, bool enable); // AT+ZTCPLISTEN
+	- uint8_t serverSend(const char * data); // AT+ZTCPSENDP
+	- uint8_t closePort();	// AT+ZTCPCLOSEP
+	- char * serverReceive(); // AT+ZTCPRECV(P)
+	- uint8_t serverStatus(); // AT+ZTCPSTATUSP
+	- uint8_t setServerTimeout(); // AT+ZIPTIMEOUT*/
+	

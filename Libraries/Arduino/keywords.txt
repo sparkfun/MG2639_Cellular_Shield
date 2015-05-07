@@ -1,0 +1,84 @@
+###################################################################
+# Syntax Coloring Map for SparkFun MG2639 Cellular Shield Library #
+###################################################################
+# Class
+###################################################################
+
+cell	KEYWORD1
+sms	KEYWORD1
+gprs	KEYWORD1
+phone	KEYWORD1
+
+
+###################################################################
+# Methods and Functions
+###################################################################
+
+begin	KEYWORD2
+changeBaud	KEYWORD2
+autoBaud	KEYWORD2
+checkSIM	KEYWORD2
+getInformation	KEYWORD2
+getIMI	KEYWORD2
+getICCID	KEYWORD2
+getPhoneNumber	KEYWORD2
+getIMEI	KEYWORD2
+
+available	KEYWORD2
+status	KEYWORD2
+callerID	KEYWORD2
+answer	KEYWORD2
+hangUp	KEYWORD2
+dial	KEYWORD2
+dialLast	KEYWORD2
+setAudioChannel	KEYWORD2
+
+setMode	KEYWORD2
+pollAvailable	KEYWORD2
+deleteMessage	KEYWORD2
+getSender	KEYWORD2
+getDate	KEYWORD2
+getMessage	KEYWORD2
+getOverrun	KEYWORD2
+start	KEYWORD2
+send	KEYWORD2
+
+open	KEYWORD2
+close	KEYWORD2
+localIP	KEYWORD2
+hostByName	KEYWORD2
+connect	KEYWORD2
+read	KEYWORD2
+peek	KEYWORD2
+flush	KEYWORD2
+write	KEYWORD2
+print	KEYWORD2
+println	KEYWORD2
+
+###################################################################
+# Constants
+###################################################################
+
+ERROR_OVERRUN_PREVENT	LITERAL1
+ERROR_UNKNOWN_RESPONSE	LITERAL1
+ERROR_FAIL_RESPONSE	LITERAL1
+ERROR_TIMEOUT	LITERAL1
+SUCCESS_OK	LITERAL1
+
+AUDIO_CHANNEL_DIFFERENTIAL	LITERAL1
+AUDIO_CHANNEL_SINGLE	LITERAL1
+CALL_ACTIVE	LITERAL1
+CALL_HOLD	LITERAL1
+CALL_DIALING	LITERAL1
+CALL_DIALED_RINGING	LITERAL1
+CALL_INCOMING	LITERAL1
+CALL_WAITING	LITERAL1
+
+REC_UNREAD	LITERAL1
+REC_READ	LITERAL1
+REC_ALL	LITERAL1
+SMS_PDU_MODE	LITERAL1
+SMS_TEXT_MODE	LITERAL1
+
+GPRS_DISCONNECTED	LITERAL1
+GPRS_ESTABLISHED	LITERAL1
