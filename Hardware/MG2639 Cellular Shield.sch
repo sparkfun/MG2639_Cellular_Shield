@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -139,7 +139,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun">
 <packages>
@@ -31398,7 +31398,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".2_INCH" value="SFE_LOGO_NAME_FLAME.2_INCH"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="VBAT1"/>
 <part name="GND17" library="SparkFun1" deviceset="GND" device=""/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2" value="LiPo"/>
+<part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2" value="DNP"/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M05" device="PTH" value="USB"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="" value="BOOT"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
