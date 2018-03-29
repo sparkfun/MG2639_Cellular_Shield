@@ -1,3 +1,6 @@
+**Note:Retired Product**
+This product has been retired from our catalog and is no longer for sale. This page is made available for those looking for datasheets and the simply curious.
+
 SparkFun MG2639 Cellular Shield
 =========================
 
@@ -19,7 +22,7 @@ Repository Contents
 * **/Documentation** - The AT command set, hardware guide, and various other datasheets.
 * **/Libraries** - The SparkFun MG2639 Cellular Shield library.
 * **/Production** - Production panel files.
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/mg2639-cellular-shield-hookup-guide)** - To get started using the MG2639 Cellular Shield, check out our tutorial!
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/retired---mg2639-cellular-shield-hookup-guide)** - To get started using the MG2639 Cellular Shield, check out our tutorial!
 
 License Information
 -------------------
